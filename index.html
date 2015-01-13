@@ -6,7 +6,8 @@
 <!-- client code changed for 1.0 -->
 <script src="https://cdn.socket.io/socket.io-1.2.1.js"></script>
 <script>
-	var socket = io.connect('http://localhost:8080');
+
+    var socket = io('/socket10').connect('http://localhost:8080/');
 
 	// on connection to server, ask for user's name with an anonymous callback
 	socket.on('connect', function(){
@@ -23,7 +24,7 @@
 	socket.on('updateusers', function(data) {
 		$('#users').empty();
 		$.each(data, function(key, value) {
-			$('#users').append('<div>' + key + '</div>');
+			$('#users').append('<div>' + key +  '</div>');
 		});
 	});
 
