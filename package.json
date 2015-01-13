@@ -1,0 +1,22 @@
+{
+  "private": "true",
+  "name": "chatroom",
+  "version": "0.1.0",
+  "description": "chatroom",
+  "dependencies": {
+      "express": "2.4.6",
+      "socket.io": "1.2.1"
+   },
+  "main": "hello-world-server.njs",
+  "scripts": {
+    "test": "echo \"Error: no test specified! Configure in package.json\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "node.js",
+     "scoket.io"
+  ],
+  "author": "",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
